@@ -1,0 +1,187 @@
+/* ===== BEAUTIFUL BACKGROUND ===== */
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    min-height: 100vh;
+    padding: 25px;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+
+/* ===== HEADER ===== */
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin: 0;
+    color: white;
+}
+
+.tagline {
+    color: #f3f3f3;
+    margin-top: 3px;
+}
+
+/* ===== MAIN GLASS CARD ===== */
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 18px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+    animation: smoothPop .7s ease-out;
+}
+
+@keyframes smoothPop {
+    from {transform: scale(0.94); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+
+/* ===== COLOR PICKER ===== */
+
+input[type="color"] {
+    width: 100%;
+    height: 65px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform .25s;
+}
+
+input[type="color"]:hover {
+    transform: scale(1.03);
+}
+
+/* ===== PREVIEW BOX ===== */
+
+.color-preview {
+    height: 150px;
+    border-radius: 15px;
+    border: 2px solid rgba(0,0,0,0.15);
+    margin: 20px 0;
+    transition: transform .25s;
+}
+
+.color-preview:hover {
+    transform: scale(1.02);
+}
+
+/* ===== VALUES BOX ===== */
+
+.color-values {
+    background: rgba(255,255,255,0.8);
+    padding: 15px;
+    border-radius: 10px;
+    font-family: monospace;
+}
+
+.color-values label {
+    margin: 6px 0;
+    display: block;
+}
+
+/* ===== BUTTONS ===== */
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: .25s;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.copyBtn{
+    margin-left:10px;
+    padding:0 0 0px;
+    width:20px;
+    height:20px;
+    background-color: #fff;
+}
+.copyBtn>img{
+    border-radius: 4px;
+    width:20px;
+    height:20px;
+}
+
+.reset {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+
+/* ===== RECENT & FAVORITE COLOR CARDS ===== */
+
+#recentColorsContainer,
+#favoriteColorsContainer {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.recent-color,
+.favorite-color {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.8);
+    cursor: pointer;
+    transition: transform .25s, box-shadow .25s;
+}
+
+.recent-color:hover,
+.favorite-color:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+
+/* ===== CONTRAST CHECKER ===== */
+
+.contrast-checker {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 12px;
+}
+
+.good-contrast, .poor-contrast {
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}

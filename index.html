@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PICKME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>PICKME – Color Picker</h1>
+    <p class="tagline">Simple • Beautiful • Interactive</p>
+</header>
+
+<div class="container">
+
+    <div class="picker-section">
+        <label>Select a Color</label>
+        <input type="color" id="colorPicker" value="#3498db">
+    </div>
+
+    <div class="color-preview" id="colorPreview"></div>
+
+    <div class="color-values">
+        <label>HEX: <span id="hexValue">#3498DB</span><span><button id="hexBtn" class="copyBtn"><img src="./Copy Button.png" alt="Copy Text"></button></span></label>
+        <label>RGB: <span id="rgbValue">rgb(52, 152, 219)</span><span><button id="rgbBtn" class="copyBtn"><img src="./Copy Button.png" alt="Copy Text"></button></span></label>
+        <label>HSL: <span id="hslValue">hsl(204, 70%, 53%)</span><span><button id="hslBtn" class="copyBtn"><img src="./Copy Button.png" alt="Copy Text"></button></span></label>
+    </div>
+
+    <div class="buttons">
+        <button id="copyBtn">Copy Color</button>
+        <button id="favBtn">Add to Favorites</button>
+        <button id="resetBtn" class="reset">Reset</button>
+    </div>
+
+    <div class="recent-colors">
+        <h2>Recent Colors</h2>
+        <div id="recentColorsContainer"></div>
+    </div>
+
+    <div class="favorite-colors">
+        <h2>Favorite Colors</h2>
+        <div id="favoriteColorsContainer"></div>
+    </div>
+
+    <div class="contrast-checker">
+        <h2>Contrast Checker</h2>
+        <p id="contrastWhite"></p>
+        <p id="contrastBlack"></p>
+    </div>
+
+</div>
+
+<footer>
+    <p>Made with ❤️ for Semester 1 Project</p>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
